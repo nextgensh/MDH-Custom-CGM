@@ -1,3 +1,0 @@
-﻿# This file is used to set up headers and a content security policy for your app if you are hosting it via AWS Amplify.
-# A valid content security policy is required for a view to be hosted inside a production MyDataHelps project: https://developer.mydatahelps.org/views/review.html
-# If you are not hosting your app using AWS amplify, this file can be deleted.
