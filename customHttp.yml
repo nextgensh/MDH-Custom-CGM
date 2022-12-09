@@ -16,7 +16,6 @@ customHeaders:
         value: 'GET, HEAD, OPTIONS'
       - key: 'Content-Security-Policy'
         value: "default-src 'self';
-                script-src 'unsafe-inline';
                 object-src 'self';
                 style-src 'self';
                 img-src 'self' data: mydatahelps.org http://localhost:*;
