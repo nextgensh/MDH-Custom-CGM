@@ -4,13 +4,17 @@ import { Card, NavigationBar, Action, Layout, StatusBarBackground, ProjectHeader
 
 export default function() {
     function homeworkAction() {
+        /*
         MyDataHelps.getParticipantInfo().then((result) => {
             let linkIdentifier = result.linkIdentifier
             let surveyURL = 'https://mydatahelps.org/mydatahelps/'+linkIdentifier+'/surveylink/?surveyName=Food%20Survey'
 
             window.location.href = surveyURL
         })
+        */
 
+        // Open a particulat survey.
+        MyDataHelps.startSurvey("Mealinfo")
     }
 
     return (
