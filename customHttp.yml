@@ -22,4 +22,4 @@ customHeaders:
                 media-src 'self';
                 frame-src 'self';
                 font-src 'self';
-                frame-ancestors 'mydatahelps.org';"
+                frame-ancestors mydatahelps.org;"
