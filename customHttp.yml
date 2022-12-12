@@ -15,11 +15,4 @@ customHeaders:
       - key: 'Access-Control-Allow-Methods'
         value: 'GET, HEAD, OPTIONS'
       - key: 'Content-Security-Policy'
-        value: "default-src 'self';
-                object-src 'self';
-                style-src 'unsafe-inline';
-                img-src 'self' data: mydatahelps.org http://localhost:*;
-                media-src 'self';
-                frame-src 'self';
-                font-src 'self';
-                frame-ancestors mydatahelps.org;"
+        value: "frame-ancestors mydatahelps.org;"
