@@ -4,17 +4,7 @@ import { Card, NavigationBar, Action, Layout, StatusBarBackground, ProjectHeader
 
 export default function() {
     function homeworkAction() {
-        /*
-        MyDataHelps.getParticipantInfo().then((result) => {
-            let linkIdentifier = result.linkIdentifier
-            let surveyURL = 'https://mydatahelps.org/mydatahelps/'+linkIdentifier+'/surveylink/?surveyName=Food%20Survey'
-
-            window.location.href = surveyURL
-        })
-        */
-
-        // Open a particulat survey.
-        MyDataHelps.startSurvey("Mealinfo")
+        MyDataHelps.startSurvey("Glucose Tracking Homework")
     }
 
     return (
@@ -22,7 +12,16 @@ export default function() {
             <StatusBarBackground />
             <ProjectHeader />
             <Card>
-                <Action 
+                <div
+                    style={{
+                        margin: '16px'
+                    }}>
+                    Your glucose tracking homework will be avaliable from December, 20th to December 30th.
+                    You can fill this up multiple times during this period.
+                </div>
+            </Card>
+            <Card>
+                <Action
                     title='Glucose Tracking Homework'
                     subtitle='Tap here to start your homework'
                     onClick={homeworkAction}
