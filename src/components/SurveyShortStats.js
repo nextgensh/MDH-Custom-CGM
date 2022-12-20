@@ -37,7 +37,6 @@ class SurveyShortStats extends React.Component {
         fontSize: '0.75em',
         color: '#757575',
       }}>
-        <div>Complete {this.state.completed} times</div>
         <div>{this.state.lastCompleteDate}</div>
       </div>
     )
