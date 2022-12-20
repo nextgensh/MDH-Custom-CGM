@@ -6,7 +6,7 @@ import { Card, NavigationBar, Action, Layout, StatusBarBackground, ProjectHeader
 
 export default function() {
     function homeworkAction() {
-        //MyDataHelps.startSurvey("Glucose Tracking Homework")
+        MyDataHelps.startSurvey("Glucose Tracking Homework")
     }
 
     return (
@@ -22,20 +22,13 @@ export default function() {
                     You can fill this up multiple times during this period.
                 </div>
             </Card>
-            <div style={{
-                color: '#757575'
-            }}>
                 <Card>
-                    <div style={{
-                       margin: '10px 0px 0px 16px'
-                    }}><FontAwesomeIcon icon={faLock} /> Locked opens on December 20th</div>
                     <Action
                         title='Glucose Tracking Homework'
                         subtitle='Tap here to start your homework'
                         onClick={homeworkAction}
                     />
                 </Card>
-            </div>
         </Layout>
     )
 }
