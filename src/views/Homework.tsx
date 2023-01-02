@@ -10,7 +10,7 @@ import SurveyShortStats from '../components/SurveyShortStats'
 export default function() {
 
     function homeworkAction() {
-        MyDataHelps.startSurvey("Glucose Tracking Homework")
+        //MyDataHelps.startSurvey("Glucose Tracking Homework")
     }
 
     return (
@@ -23,22 +23,29 @@ export default function() {
                         margin: '16px'
                     }}>
                     <Greetings />
-                    Your glucose tracking homework will be avaliable from December, 20th to December 30th.
-                    You can fill this up multiple times during this period.
+                    Your glucose tracking homework has now been locked. <br/>
+                    It was avaliable from December, 20th to December 30th.
                 </div>
             </Card>
-            <Card>
-                <Action
-                    title='Glucose Tracking Homework'
-                    subtitle='Tap here to start your homework'
-                    onClick={homeworkAction}
-                />
-                <div style={{
-                    margin: '0 0 16px 16px'
-                }}>
-                    <SurveyShortStats surveyName='Glucose Tracking Homework'/>
-                </div>
-            </Card>
+            <div style={{
+                color: '#757575'
+            }}>
+                <Card>
+                    <div style={{
+                    margin: '10px 0px 0px 16px'
+                    }}><FontAwesomeIcon icon={faLock} /> Locked, ended on December 30th</div>
+                    <Action
+                        title='Glucose Tracking Homework'
+                        subtitle='Tap here to start your homework'
+                        onClick={homeworkAction}
+                    />
+                    <div style={{
+                        margin: '0 0 16px 16px'
+                    }}>
+                        <SurveyShortStats surveyName='Glucose Tracking Homework'/>
+                    </div>
+                </Card>
+            </div>
         </Layout>
     )
 }
