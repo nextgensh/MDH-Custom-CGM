@@ -12,7 +12,7 @@ class Homework extends React.Component {
     constructor(props : any) {
         super(props)
         const today = new Date()
-        const opendate = new Date(2022, 2, 2)
+        const opendate = new Date(2023, 2, 2)
         const closedate = new Date(2023, 2, 13)
 
         // Create the set of strings that will change based on the dates.
@@ -40,7 +40,7 @@ class Homework extends React.Component {
 
     homeworkAction() {
         const today = new Date()
-        const opendate = new Date(2022, 2, 2)
+        const opendate = new Date(2023, 2, 2)
         const closedate = new Date(2023, 2, 13)
 
         if(today < closedate && today >= opendate) {
